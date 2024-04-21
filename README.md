@@ -1,1 +1,1 @@
-[![GitHub Pages](https://owilliangoncalves.github.io/bootstrap-pratice/)
+[GitHub Pages](https://owilliangoncalves.github.io/bootstrap-pratice/)
