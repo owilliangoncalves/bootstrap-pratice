@@ -10,7 +10,7 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
 
-  <title>Caravan - Local</title>
+  <title>Caravan - Inscrição</title>
 </head>
 
 <body>
@@ -57,26 +57,26 @@
       <div id="navbarSupportedContent" class="collapse navbar-collapse">
         <ul class="navbar-nav ms-auto mb-2">
           <li class="nav-item dropdown">
-            <a href="" class="nav-link ms-sm-2 dropdown-toggle active " href="#" role="button" data-bs-toggle="dropdown"
+            <a href="" class="nav-link ms-sm-2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
               aria-expanded="false">Locais</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">California</a></li>
-              <li><a class="dropdown-item" href="#">Paris</a></li>
-              <li><a class="dropdown-item" href="#">Dublin</a></li>
+              <li><a class="dropdown-item" href="local.html">California</a></li>
+              <li><a class="dropdown-item" href="local.html">Paris</a></li>
+              <li><a class="dropdown-item" href="local.html">Dublin</a></li>
             </ul>
           </li>
           <li class="nav-item">
             <a href="planos.html" class="nav-link ms-sm-2">Planos</a>
           </li>
           <li class="nav-item">
-            <a href="contato.html" class="nav-link ms-sm-2">Contato</a>
+            <a href="contato.html" class="nav-link ms-sm-2 ">Contato</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link ms-sm-2" data-bs-toggle="modal" data-bs-target="#login">Login</a>
 
           </li>
           <li class="nav-item">
-            <a href="/inscricao.html" class="btn btn-outline-primary me-2 ms-sm-4">Inscreva-se</a>
+            <a href="#" class="btn btn-outline-primary me-2 ms-sm-4 active">Inscreva-se</a>
           </li>
         </ul>
       </div>
@@ -84,75 +84,102 @@
   </nav>
 
 
-
-  <section class="container ">
-
+  <section class="container   ">
     <div class="my-5 text-center">
-      <span class="h6 d-block">O MELHOR DESTINO DA SUA VIAGEM</span>
-      <h1 class="display-4 text-primary">Descubra Dublin</h1>
+      <span class="h6 d-block">PROGRAME A VIAGEM DO SEU SONHO</span>
+      <h2 class="display-4 text-primary">INSCREVA-SE</h2>
+      <div class="row">
+
+        <div class="col-md-6">
+          <div class="bg-light rounded-2 box-shadow">
+            <h2 class="p-3 m-0">Platinum
+              <span class=" badge text-bg-success ">Novo</span>
+            </h2>
+            <ul class=" line list-unstyled pe-3 ps-3">
+              <li>60 dias de viagem</li>
+              <li>6 destinos diferentes</li>
+              <li>Tudo pago pela empresa</li>
+              <li>Ingressos para festas</li>
+            </ul>
+            <form class="pe-3 ps-3 ">
+              <div class="form-goup">
+                <select class="form-select bg-light  " id="floatingSelect" aria-label="Floating label select example">
+                  <option selected>Escolha a cidade</option>
+                  <option value="1">Dublin</option>
+                  <option value="2">Paris</option>
+                  <option value="3">California</option>
+                </select>
+              </div>
+            </form>
+            <div class="row p-3 align-items-center mb-4 ">
+
+              <div class="col text-start  "><span class="h4 mt-md-3 ">R$ 13.000</span></div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-6">
+          <form class="row g-3 text-start">
+            <div class="col-md-6">
+              <label for="clienteNome" class="form-label  ">Nome:</label>
+              <input type="text" class="form-control" id="clienteNome" placeholder="Nome Completo">
+            </div>
+            <div class="col-md-6">
+              <label for="clienteCPF" class="form-label  ">CPF:</label>
+              <input type="text" class="form-control" id="clienteCPF" placeholder="xxx-xxx-xxx-xx">
+            </div>
+            <div class="col">
+              <label for="clienteEmail" class="form-label">Email:</label>
+              <input type="email" class="form-control" id="clienteEmail">
+            </div>
+            <div class="col-12">
+              <label for="clienteEndereco" class="form-label">Endereço:</label>
+              <input type="text" class="form-control" id="clienteEndereco" placeholder="Digite sua rua">
+            </div>
+            <div class="col-12">
+              <label for="clienteComplemento" class="form-label">Complemento:</label>
+              <input type="text" class="form-control" id="clienteComplemento" placeholder="Ponto de referência">
+            </div>
+            <div class="col-md-6">
+              <label for="clienteCidade" class="form-label">Cidade:</label>
+              <input type="text" class="form-control" id="clienteCidade">
+            </div>
+            <div class="col-md-4">
+              <label for="clienteEstado" class="form-label">Estado:</label>
+              <select id="clienteEstado" class="form-select">
+                <option selected>Selecione o Estado</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="clienteCEP" class="form-label">CEP:</label>
+              <input type="text" class="form-control" id="clienteCEP">
+            </div>
+            <div class="col-12">
+              <label for="clienteSenha" class="form-label">Senha:</label>
+              <input type="password" class="form-control" id="clienteSenha">
+            </div>
+            <div class="col-12">
+              <div class="form-check  ">
+                <input class="Termo e condicoes" type="checkbox" id="gridCheck">
+                <label class="Termo e condicoes" for="gridCheck">
+                  <a class="h6 text-decoration-none " href="#">CONCORDO COM TERMOS E CONDIÇÕES</a>
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
 
-    <div class="row">
-      <div class="col-md">
-        <img class="img-fluid mb-4 " src="./img/local/foto-1.jpg" alt="">
-        <img class="img-fluid mb-4 " src="./img/local/foto-2.jpg" alt="">
-        <img class="img-fluid mb-4 " src="./img/local/foto-3.jpg" alt="">
-      </div>
-      <div class="col-md">
-        <img class="img-fluid mb-4  " src="./img/local/foto-4.jpg" alt="">
-        <img class="img-fluid mb-4  " src="./img/local/foto-5.jpg" alt="">
-      </div>
 
-      <div class="col-md">
-        <img class="img-fluid mb-4 " src="./img/local/foto-6.jpg" alt="">
-        <img class="img-fluid mb-4 " src="./img/local/foto-7.jpg" alt="">
-      </div>
 
-    </div>
-    </div>
   </section>
 
-  <section class="container">
-    <div class="my-5 text-center">
-      <span class="h6 d-block">DESCUBRA O QUE ACONTECE NA CIDADE</span>
-      <h1 class="display-4 text-primary">Próximos Eventos</h1>
-    </div>
-
-    <table class="table table-hover mb-0 ">
-      <thead>
-        <tr>
-          <th scope="col">Data</th>
-          <th scope="col">Evento</th>
-          <th scope="col">Local</th>
-          <th scope="col">Ingressos</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">28/12</th>
-          <td>Julien Baker</td>
-          <td>The Academy</td>
-          <td><a class="btn btn-outline-secondary small" href="#">Comprar ingresso</a></td>
-        </tr>
-        <tr>
-          <th scope="row">28/12</th>
-          <td>Julien Baker</td>
-          <td>The Academy</td>
-          <td><a class="btn btn-outline-secondary small" href="#">Comprar ingresso</a></td>
-
-        </tr>
-        <tr>
-          <th scope="row">28/12</th>
-          <td>Julien Baker</td>
-          <td>The Academy</td>
-          <td><a class="btn btn-outline-secondary small" href="#">Comprar ingresso</a></td>
-        </tr>
-      </tbody>
-    </table>
-
-  </section>
-
-  <footer class="bg-dark text-white mt-5 ">
+  <footer class="bg-dark text-white mt-5">
     <div class="container py-4">
       <div class="row">
         <div class="col-md-3 col-6">
@@ -189,8 +216,6 @@
             </li>
           </ul>
         </div>
-
-
         <div class="col-md-4 col-6">
           <h4 class="h6">DADOS DE CONTATO</h4>
           <ul class="list-unstyled  text-secondary ">
@@ -198,7 +223,6 @@
             <li>+55 (19) 98139-8215</li>
           </ul>
         </div>
-
         <div class="col-md-2 col-6">
           <h4 class="h6">REDES SOCIAIS</h4>
           <ul>
@@ -212,7 +236,6 @@
     </div>
     <div class="bg-primary text-center py-3 ">
       <p class="mb-0 ">Caravan © 2024. Alguns direitos reservados.</p>
-
     </div>
   </footer>
 
